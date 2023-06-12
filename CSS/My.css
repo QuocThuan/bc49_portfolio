@@ -1,0 +1,213 @@
+/* reset css   */
+
+header .navbar-nav .nav-item::after {
+    content:"" ;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #35a22c;
+    transition: all 0.5s;
+}
+
+header .navbar-nav .nav-item:hover::after {
+    width: 100%;
+}
+
+header .navbar-nav .nav-item .nav-link:hover {
+    color: #35a22c !important;
+}
+
+header .navbar-nav li.active::after {
+    width: 100%;
+}
+
+header .navbar-nav li.active a {
+    color: #35a22c !important;
+}
+
+header {
+    z-index: 99999999;
+}
+
+/* cyber_carousel */
+.cyber_carousel .carousel-inner {
+    height: 100vh;
+}
+
+.cyber_carousel .carousel-inner img {
+    object-fit: cover;
+}
+
+/* canh giữa khi cần tạo overlay  */
+.cyber_carousel .carousel-inner .carousel-item .carousel_content {
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white; 
+    background-color: rgba(39,43,54,.5);
+}
+
+.cyber_carousel .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.cyber_carousel .carousel-indicators .active {
+    background-color: green;
+}
+
+/* Project  */
+.cyber_project .nav-pills .nav-link.active {
+    background-color: green;
+    color: white !important;
+}
+
+.cyber_project .tab-content .row .col-4 .card .card-body {
+    border: none;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+    border-radius: 0 0 0.375rem 0.375rem;
+}
+
+.cyber_project .tab-content .row .col-4 .card:hover h5 {
+    color: green;
+}
+
+.cyber_project .tab-content .row .col-4 .card:hover .card-body {
+    border: 1px solid green;
+}
+
+/* Aval  */
+
+.cyber_aval {
+    position: relative;
+    background-image: url(./../image/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cyber_aval .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(7,10,12,.72);
+}
+
+.cyber_aval .aval_item .card {
+    background-color: rgba(255,255,255,.1);
+}
+
+/* Award */
+.cyber_award .overlay {
+
+    background-image: url(./../image/memphis_3.png);
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+/* footer  */
+footer .footer_content .footer_top .footer_item a {
+    text-decoration: none !important;
+}
+
+footer .footer_content .footer_top .footer_item a i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 0.5px solid gray;
+    margin-right: 10px;
+}
+
+footer .footer_content .footer_top .footer_item a:hover i {
+    color: #35a22c !important;
+    border: 0.5px solid #35a22c !important;
+}
+
+footer .footer_content hr {
+    border: none;
+    background-color: gray;
+    width: 100%;
+    height: 1px;
+    margin: 25px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* sau này khi đi làm, các @keyframes và @media sẽ thường để hết bên dưới file css  { */
+/* Lưu ý khi sử dụng @media với max-width: đó là khi viết những breakpoint nhỏ hơn chúng ta sẽ để cho các breakpoint đó nằm dưới cùng và những breakpoint lớn hơn sẽ nằm trên */
+    
+
+
+/* 
+@media screen and (max-width: 992px) {
+    .cyber_carousel .carousel_content h2 {
+        color: red;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .cyber_carousel .carousel_content h2 {
+        color: green;
+    }
+} */
+
+
+/* Lưu ý khi sử dụng @media với min-width: đó là khi viết những breakpoint nhỏ hơn chúng ta sẽ để cho các breakpoint đó nằm trên cùng và những breakpoint lớn hơn sẽ nằm dưới */
+
+
+@media screen and (min-width: 576px) {
+    .cyber_carousel .carousel_content h2 {
+        color: yellow;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cyber_project .nav-pills .nav-link.active {
+        background-color: red;
+    }
+}
+

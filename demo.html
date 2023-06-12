@@ -1,0 +1,58 @@
+<!-- lệnh để tạo nhanh 1 cấu trúc html có gắn sẵn các cnd từ bootstrap 5 là bs5-$-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- lệnh gõ nhanh để gắn từ font-awesome phiên bản 6 . Lưu ý khi sử dụng lệnh sẽ phải xóa đi đoạn script được thêm vào bên dưới the rlink, nếu ko xóa sẽ bị thay đổi thẻ i của fon-awesome thành thẻ svg và khó để chỉnh sửa-->
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <!-- utilities bootstrap -->
+  <!-- background  -->
+  <!-- để có thể chỉnh màu nền cho các thẻ ta sử dụng 1 class utilities tới bootstrap có cấu trúc là: bg-maucanchinh  -->
+  <!-- một số màu cơ bản của bootstrap: đỏ (danger), xanh lá cây (success), đen (dark), trắng (white).... -->
+  <!-- ngoài ra còn có bg-opacity-phantram giúp giảm màu của background nền đang có, phantram gồm có các số 10,25,50,75,100   -->
+  <!-- Text  -->
+  <!-- text-alignment, khi muốn canh chỉnh nội dung ta dùng 1 class utilities của bs có cấu trúc là: text-giatrimuonchinh, các giá trị bao gồm start sẽ nằm về tay tría, center là giữa, end là phải   -->
+  <!-- text-tranform, chỉnh kiểu chữ ta dùng class bs có cấu trúc là text-giatri, in hoa hết là uppercase, thường là lowercase, in hoa kí tự đầu là capitalize  -->
+  <!-- Fon-size, khi dùng sẽ có cấu trúc class là fs-giatri, giá trị này sẽ từ 1-6 và ứng với 1 là cao nhất  -->
+  <!-- chỉnh màu nội dung gọi 1 class từ bs có cấu trúc text-mamau, ở mã màu sẽ có tương đồng với màu của background bên trên   -->
+  <!-- Padding  -->
+  <!-- sử dụng cấu trúc p-giatri để chỉnh padding cho 4 hướng, ngoài ra dùng thêm các tiền tố phía sau p để chỉnh tùy hướng vd: t,b,s,e,x,y   -->
+  <!-- Margin   -->
+  <!-- sử dụng cấu trúc m-giatri để chỉnh padding cho 4 hướng, ngoài ra dùng thêm các tiền tố phía sau p để chỉnh tùy hướng vd: t,b,s,e,x,y   -->
+  <h1 class="bg-danger text-center text-uppercase fs-1 text-light p-5">Hello Cybersoft</h1>
+  <div class="d-flex">
+    <div>Tôi là bánh khúc</div>
+    <div>Tôi là bánh giò</div>
+  </div>
+
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
