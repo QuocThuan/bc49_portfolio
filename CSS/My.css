@@ -208,6 +208,7 @@ footer .footer_content hr {
 @media screen and (min-width: 992px) {
     .cyber_project .nav-pills .nav-link.active {
         background-color: red;
+        border: #35a22c;
     }
 }
 
